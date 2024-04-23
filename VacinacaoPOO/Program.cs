@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using Pessoa;
 
 class Program {
     static void Main(string[] args) {
-        List<Cidadao> cidadaosCadastrados = new List<Cidadao>();
+        List<Pessoas> pessoasCadastradas = new List<Pessoas>();
 
         while (true) {
             Console.WriteLine("\nMenu:");
             Console.WriteLine("1. Cadastrar novo cidadão");
-            Console.WriteLine("2. Consultar cidadãos cadastrados");
+            Console.WriteLine("2. Consultar pessoas cadastradas");
             Console.WriteLine("3. Agendar vacinação");
             Console.WriteLine("4. Consultar agendamento de vacinação");
             Console.WriteLine("5. Sair");
@@ -22,16 +23,16 @@ class Program {
 
             switch (opcao) {
                 case 1:
-                    CadastrarCidadao(cidadaosCadastrados);
+                    CadastrarPessoa(pessoasCadastradas);
                     break;
                 case 2:
-                    ConsultarCidadaos(cidadaosCadastrados);
+                    ConsultarPessoas(pessoasCadastradas);
                     break;
                 case 3:
-                    AgendarVacina(cidadaosCadastrados);
+                    AgendarVacina(pessoasCadastradas);
                     break;
                 case 4:
-                    ConsultarAgendamento(cidadaosCadastrados);
+                    ConsultarAgendamento(pessoasCadastradas);
                     break;
                 case 5:
                     Console.WriteLine("Saindo...");
@@ -42,82 +43,90 @@ class Program {
             }
         }
     }
-    static void CadastrarCidadao(List<Cidadao> listaCidadaos) {
-        Console.Write("Digite o nome do cidadão: ");
+   
+    static void CadastrarPessoa(List<Pessoas> listaPessoas) {
+        Console.WriteLine("Cadastro de nova pessoa:");
+        Console.Write("Digite o nome: ");
         string nome = Console.ReadLine();
 
-        Console.Write("Digite o CPF do cidadão: ");
+        Console.Write("Digite o CPF: ");
         string cpf = Console.ReadLine();
 
-        Console.Write("Digite a idade do cidadão: ");
+        Console.Write("Digite a idade: ");
         int idade;
         while (!int.TryParse(Console.ReadLine(), out idade) || idade < 0) {
             Console.WriteLine("Idade inválida. Digite novamente.");
-            Console.Write("Digite a idade do cidadão: ");
+            Console.Write("Digite a idade: ");
         }
 
-        Console.Write("Digite o telefone do cidadão: ");
+        Console.Write("Digite o telefone: ");
         string telefone = Console.ReadLine();
 
-        Console.Write("Digite o email do cidadão: ");
+        Console.Write("Digite o email: ");
         string email = Console.ReadLine();
 
-        Console.Write("O cidadão foi vacinado? (s/n): ");
-        bool vacinado = Console.ReadLine().ToLower() == "s";
+        Pessoas novaPessoa = new Pessoas(nome, cpf, idade, telefone, email);
+        listaPessoas.Add(novaPessoa);
 
-        Cidadao novoCidadao = new Cidadao(nome, cpf, idade, telefone, email, vacinado);
-        listaCidadaos.Add(novoCidadao);
+        Console.WriteLine("Pessoa cadastrada com sucesso!");
 
-        if (!vacinado) {
+        
+        if (novaPessoa is Cidadao cidadao && !cidadao.Vacinado) {
             Console.Write("Deseja agendar a vacinação? (s/n): ");
             if (Console.ReadLine().ToLower() == "s") {
-                AgendarVacina(listaCidadaos, novoCidadao);
+                AgendarVacina(listaPessoas, novaPessoa);
             }
         }
-
-        Console.WriteLine("Cidadão cadastrado com sucesso!");
     }
-    static void ConsultarCidadaos(List<Cidadao> listaCidadaos) {
-        Console.WriteLine("\nCidadãos cadastrados:");
-        foreach (var cidadao in listaCidadaos) {
-            Console.WriteLine($"Nome: {cidadao.Nome}, CPF: {cidadao.Cpf}, Idade: {cidadao.Idade}, Telefone: {cidadao.Telefone}, Email: {cidadao.Email}, Vacinado: {(cidadao.Vacinado ? "Sim" : "Não")}");
+   
+    static void ConsultarPessoas(List<Pessoas> listaPessoas) {
+        Console.WriteLine("\nPessoas cadastradas:");
+        foreach (var pessoa in listaPessoas) {
+            Console.WriteLine($"Nome: {pessoa.Nome}, CPF: {pessoa.CPF}, Idade: {pessoa.Idade}, Telefone: {pessoa.Telefone}, Email: {pessoa.Email}");
         }
     }
-    static void AgendarVacina(List<Cidadao> listaCidadaos) {
-        Console.WriteLine("\nCidadãos disponíveis para agendamento de vacinação:");
-        for (int i = 0; i < listaCidadaos.Count; i++) {
-            Console.WriteLine($"{i + 1}. {listaCidadaos[i].Nome}");
+
+    static void AgendarVacina(List<Pessoas> listaPessoas) {
+        Console.WriteLine("\nPessoas disponíveis para agendamento de vacinação:");
+        for (int i = 0; i < listaPessoas.Count; i++) {
+            Console.WriteLine($"{i + 1}. {listaPessoas[i].Nome}");
         }
 
-        Console.Write("Escolha o número do cidadão para agendar vacinação: ");
+        Console.Write("Escolha o número da pessoa para agendar vacinação: ");
         int escolha;
-        while (!int.TryParse(Console.ReadLine(), out escolha) || escolha < 1 || escolha > listaCidadaos.Count) {
+        while (!int.TryParse(Console.ReadLine(), out escolha) || escolha < 1 || escolha > listaPessoas.Count) {
             Console.WriteLine("Escolha inválida. Digite novamente.");
-            Console.Write("Escolha o número do cidadão para agendar vacinação: ");
+            Console.Write("Escolha o número da pessoa para agendar vacinação: ");
         }
 
-        AgendarVacina(listaCidadaos, listaCidadaos[escolha - 1]);
+        AgendarVacina(listaPessoas, listaPessoas[escolha - 1]);
     }
-    static void AgendarVacina(List<Cidadao> listaCidadaos, Cidadao cidadao) {
-        Console.Write("Digite a data de agendamento (dd/mm/aaaa): ");
-        DateTime data;
-        while (!DateTime.TryParseExact(Console.ReadLine(), "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out data)) {
-            Console.WriteLine("Data inválida. Digite novamente no formato dd/mm/aaaa.");
+
+    static void AgendarVacina(List<Pessoas> listaPessoas, Pessoas pessoa) {
+        if (pessoa is Cidadao cidadao) {
             Console.Write("Digite a data de agendamento (dd/mm/aaaa): ");
-        }
+            DateTime data;
+            while (!DateTime.TryParseExact(Console.ReadLine(), "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out data)) {
+                Console.WriteLine("Data inválida. Digite novamente no formato dd/mm/aaaa.");
+                Console.Write("Digite a data de agendamento (dd/mm/aaaa): ");
+            }
 
-        cidadao.AgendarVacina(data);
-        Console.WriteLine($"Vacinação agendada para {cidadao.Nome} com sucesso!");
+            cidadao.AgendarVacina(data);
+            Console.WriteLine($"Vacinação agendada para {cidadao.Nome} com sucesso!");
+        } else {
+            Console.WriteLine("Apenas cidadãos podem agendar vacinação.");
+        }
     }
-    static void ConsultarAgendamento(List<Cidadao> listaCidadaos) {
-        Console.Write("Digite o CPF do cidadão para consultar o agendamento: ");
+
+    static void ConsultarAgendamento(List<Pessoas> listaPessoas) {
+        Console.Write("Digite o CPF da pessoa para consultar o agendamento: ");
         string cpf = Console.ReadLine();
 
-        var cidadao = listaCidadaos.Find(c => c.Cpf == cpf);
-        if (cidadao != null && cidadao.AgendamentoVacina.HasValue) {
+        var pessoa = listaPessoas.Find(p => p.CPF == cpf);
+        if (pessoa != null && pessoa is Cidadao cidadao && cidadao.AgendamentoVacina.HasValue) {
             Console.WriteLine($"O cidadão {cidadao.Nome} está agendado para vacinação em {cidadao.AgendamentoVacina.Value.ToString("dd/MM/yyyy")}.");
         } else {
-            Console.WriteLine("Cidadão não encontrado ou não agendado para vacinação.");
+            Console.WriteLine("Pessoa não encontrada ou não agendada para vacinação.");
         }
     }
 }

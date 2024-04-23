@@ -1,20 +1,14 @@
-public class Cidadao {
-    public string Nome { get; set; }
-    public string Cpf { get; set; }
-    public int Idade { get; set; }
-    public string Telefone { get; set; }
-    public string Email { get; set; }
+using Pessoa;
+
+public class Cidadao : Pessoas {
     public bool Vacinado { get; set; }
     public DateTime? AgendamentoVacina { get; set; }
 
-    public Cidadao(string nome, string cpf, int idade, string telefone, string email, bool vacinado) {
-        Nome = nome;
-        Cpf = cpf;
-        Idade = idade;
-        Telefone = telefone;
-        Email = email;
+    public Cidadao(string nome, string cpf, int idade, string telefone, string email, bool vacinado)
+        : base(nome, cpf, idade, telefone, email) {
         Vacinado = vacinado;
     }
+
     public void AgendarVacina(DateTime data) {
         AgendamentoVacina = data;
     }

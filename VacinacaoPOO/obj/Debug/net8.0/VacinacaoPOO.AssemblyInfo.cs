@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VacinacaoPOO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6ceb70c6678e3079a7a90b503dd9d2fdf0e3788")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75059ec29787850bf0b48fc00dbcdd3b16da625c")]
 [assembly: System.Reflection.AssemblyProductAttribute("VacinacaoPOO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VacinacaoPOO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
