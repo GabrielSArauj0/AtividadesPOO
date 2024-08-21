@@ -1,0 +1,15 @@
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\VacinacaoPOO2\bin\Debug\net8.0\VacinacaoPOO2.exe
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\VacinacaoPOO2\bin\Debug\net8.0\VacinacaoPOO2.deps.json
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\VacinacaoPOO2\bin\Debug\net8.0\VacinacaoPOO2.runtimeconfig.json
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\VacinacaoPOO2\bin\Debug\net8.0\VacinacaoPOO2.dll
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\VacinacaoPOO2\bin\Debug\net8.0\VacinacaoPOO2.pdb
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\VacinacaoPOO2\obj\Debug\net8.0\VacinacaoPOO2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\VacinacaoPOO2\obj\Debug\net8.0\VacinacaoPOO2.AssemblyInfoInputs.cache
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\VacinacaoPOO2\obj\Debug\net8.0\VacinacaoPOO2.AssemblyInfo.cs
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\VacinacaoPOO2\obj\Debug\net8.0\VacinacaoPOO2.csproj.CoreCompileInputs.cache
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\VacinacaoPOO2\obj\Debug\net8.0\VacinacaoPOO2.sourcelink.json
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\VacinacaoPOO2\obj\Debug\net8.0\VacinacaoPOO2.dll
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\VacinacaoPOO2\obj\Debug\net8.0\refint\VacinacaoPOO2.dll
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\VacinacaoPOO2\obj\Debug\net8.0\VacinacaoPOO2.pdb
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\VacinacaoPOO2\obj\Debug\net8.0\VacinacaoPOO2.genruntimeconfig.cache
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\VacinacaoPOO2\obj\Debug\net8.0\ref\VacinacaoPOO2.dll
