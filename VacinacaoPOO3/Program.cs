@@ -68,8 +68,7 @@ class Program
         string email = Console.ReadLine();
 
         Cidadao novoCidadao = new Cidadao(nome, cpf, idade, vacinado, telefone, email);
-
-        // Agendar vacinação se o usuário desejar
+        
         Console.Write("Deseja agendar a vacinação? (s/n): ");
         if (Console.ReadLine().ToLower() == "s")
         {
