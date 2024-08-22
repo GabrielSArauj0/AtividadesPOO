@@ -10,16 +10,14 @@ namespace VacinacaoPOO.Entities
         public string CNPJ_PrestadoraServico { get; set; }
         public string Telefone { get; set; }
         public string Email { get; set; }
-
-        // Construtor com campos obrigatórios
+        
         public Funcionario(string nome, int matricula, string cnpj)
         {
             Nome = nome;
             Matricula = matricula;
             CNPJ_PrestadoraServico = cnpj;
         }
-
-        // Construtor com todos os campos
+        
         public Funcionario(string nome, int matricula, string cnpj, string telefone, string email)
         {
             Nome = nome;
