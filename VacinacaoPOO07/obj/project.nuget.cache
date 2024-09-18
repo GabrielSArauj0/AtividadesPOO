@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "9s/ukSTzhEG2mA6cnS0XLX16LOd5yifpclnZM2YUODdirqzmGbruGDziTOp2Omw5Vj6piAifm9fgY4TZrQElrA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gabri\\OneDrive\\Desktop\\Rider\\AtividadesPOO\\VacinacaoPOO07\\VacinacaoPOO07.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gabri\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.28\\microsoft.netcore.app.host.win-x64.6.0.28.nupkg.sha512"
+  ],
+  "logs": []
+}
