@@ -1,0 +1,15 @@
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\Atividade10\Atividade10\bin\Debug\net6.0\Atividade10.exe
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\Atividade10\Atividade10\bin\Debug\net6.0\Atividade10.deps.json
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\Atividade10\Atividade10\bin\Debug\net6.0\Atividade10.runtimeconfig.json
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\Atividade10\Atividade10\bin\Debug\net6.0\Atividade10.dll
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\Atividade10\Atividade10\bin\Debug\net6.0\Atividade10.pdb
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\Atividade10\Atividade10\obj\Debug\net6.0\Atividade10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\Atividade10\Atividade10\obj\Debug\net6.0\Atividade10.AssemblyInfoInputs.cache
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\Atividade10\Atividade10\obj\Debug\net6.0\Atividade10.AssemblyInfo.cs
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\Atividade10\Atividade10\obj\Debug\net6.0\Atividade10.csproj.CoreCompileInputs.cache
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\Atividade10\Atividade10\obj\Debug\net6.0\Atividade10.sourcelink.json
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\Atividade10\Atividade10\obj\Debug\net6.0\Atividade10.dll
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\Atividade10\Atividade10\obj\Debug\net6.0\refint\Atividade10.dll
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\Atividade10\Atividade10\obj\Debug\net6.0\Atividade10.pdb
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\Atividade10\Atividade10\obj\Debug\net6.0\Atividade10.genruntimeconfig.cache
+C:\Users\gabri\OneDrive\Desktop\Rider\AtividadesPOO\Atividade10\Atividade10\obj\Debug\net6.0\ref\Atividade10.dll
